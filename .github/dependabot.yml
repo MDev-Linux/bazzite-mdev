@@ -6,6 +6,9 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "system_modules/desktop/silverblue/usr/share/gnome-shell/extensions/tilingshell@ferrarodomenico.com"
+        versions: "16.2.0"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
