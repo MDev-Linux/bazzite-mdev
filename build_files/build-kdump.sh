@@ -2,15 +2,12 @@
 
 set -eoux pipefail
 
-echo "::group::Installing Kernel Debug Packages"
+echo "::group::Installing Kernel Dump Packages"
 trap 'echo "::endgroup::"' EXIT
 
-# Install Kernel Debug Packages
+# Install Kernel Dump Packages
 dnf5 install -y \
-    --enablerepo="fedora-debuginfo" \
-    --enablerepo="updates-debuginfo" \
     crash \
     kdump-utils \
-    kernel-debuginfo \
     kexec-tools \
     makedumpfile
