@@ -85,6 +85,7 @@ jobs:
         id: rechunk
         run: |
           just ostree-rechunk \
+            ${IMAGE_REGISTRY}/${IMAGE_NAME}:${DEFAULT_TAG} \
             ${IMAGE_NAME} \
             ${DEFAULT_TAG}
 

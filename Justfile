@@ -188,6 +188,7 @@ ostree-rechunk $target_base=image_base $target_image=image_name $tag=default_tag
       --format-version=2 \
       --bootc \
       --rootfs /rpm-ostree \
+      --previous-build docker://${target_base} \
       --output "containers-storage:[overlay@/run/host-container-storage+/run/rpm-ostree-storage]localhost/${target_image}:${tag}"
 
 # Generate Default Tag
