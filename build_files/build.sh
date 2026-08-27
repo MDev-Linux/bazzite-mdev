@@ -1,27 +1,43 @@
 #!/bin/bash
 
-set -ouex pipefail
+set -eoux pipefail
 
-# Copy the contents of system_files/ of the git repo to /
-cp -avf "/ctx/system_files"/. /
+echo "::group::Preparing Build"
+source /ctx/build_files/build-prepare.sh
+echo "::endgroup::"
 
-### Install packages
+echo "::group::Installing COPR Packages"
+source /ctx/build_files/build-copr.sh
+echo "::endgroup::"
 
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
+echo "::group::Installing Custom Repo Packages"
+source /ctx/build_files/build-repofile.sh
+echo "::endgroup::"
 
-# this installs a package from fedora repos
-dnf5 install -y tmux
+echo "::group::Installing Developer Packages"
+source /ctx/build_files/build-dx.sh
+echo "::endgroup::"
 
-# Use a COPR Example:
-#
-# dnf5 -y copr enable ublue-os/staging
-# dnf5 -y install package
-# Disable COPRs so they don't end up enabled on the final image:
-# dnf5 -y copr disable ublue-os/staging
+echo "::group::Installing Custom Developer Packages"
+source /ctx/build_files/build-custom.sh
+echo "::endgroup::"
 
-#### Example for enabling a System Unit File
+echo "::group::Installing Envision Packages"
+source /ctx/build_files/build-envision.sh
+echo "::endgroup::"
 
-systemctl enable podman.socket
+echo "::group::Installing Kernel Debug Packages"
+source /ctx/build_files/build-kernel-debug.sh
+echo "::endgroup::"
+
+echo "::group::Installing Kernel Dump Packages"
+source /ctx/build_files/build-kernel-dump.sh
+echo "::endgroup::"
+
+echo "::group::Installing Gnome Shell Extensions"
+source /ctx/build_files/build-gnome-extensions.sh
+echo "::endgroup::"
+
+echo "::group::Finalizing Build"
+source /ctx/build_files/build-finalize.sh
+echo "::endgroup::"
