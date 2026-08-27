@@ -173,7 +173,8 @@ ostree-rechunk $target_base=image_base $target_image=image_name $tag=default_tag
     set -xeuo pipefail
 
     # Use the already-built local image to avoid pulling from a remote registry
-    RPM_OSTREE_CHUNKER_IMAGE="quay.io/fedora/fedora-bootc:latest"
+    # RPM_OSTREE_CHUNKER_IMAGE="quay.io/fedora/fedora-bootc:latest"
+    RPM_OSTREE_CHUNKER_IMAGE="ghcr.io/mdev-linux/custom-bootc@sha256:2be1bddb4dbff184a57dc8b0cefda481dad8f11f2d4e957c2d8b1dbd63e41304"
 
     GRAPHROOT="$(podman info --format '{{ '{{.Store.GraphRoot}}' }}')"
 
