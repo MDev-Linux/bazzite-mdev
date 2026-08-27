@@ -20,7 +20,7 @@ concurrency:
 jobs:
   build_push:
     name: Build & Push Image
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
 
     strategy:
       fail-fast: false
