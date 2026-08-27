@@ -22,6 +22,19 @@ jobs:
     name: Build & Push Image
     runs-on: ubuntu-24.04
 
+    strategy:
+      fail-fast: false
+      matrix:
+        base_image_spin:
+          # - ""
+          - "-gnome"
+          # - "-nvidia-open"
+          - "-gnome-nvidia-open"
+
+    env:
+      BASE_IMAGE: "ghcr.io/ublue-os/bazzite"
+      IMAGE_SPIN: ${{ matrix.base_image_spin }}
+
     permissions:
       contents: read
       packages: write
@@ -55,13 +68,16 @@ jobs:
         run: |
           IMAGE_NAME=$(just image_name)
           DEFAULT_TAG=$(just generate-default-tag)
-          echo "IMAGE_REGISTRY=${IMAGE_REGISTRY,,}" >> ${GITHUB_ENV}
-          echo "IMAGE_NAME=${IMAGE_NAME,,}" >> ${GITHUB_ENV}
+          echo "BASE_IMAGE=${BASE_IMAGE,,}${IMAGE_SPIN,,}"  >> ${GITHUB_ENV}
+          echo "IMAGE_REGISTRY=${IMAGE_REGISTRY,,}"         >> ${GITHUB_ENV}
+          echo "IMAGE_NAME=${IMAGE_NAME,,}${IMAGE_SPIN,,}"  >> ${GITHUB_ENV}
+          echo "DEFAULT_TAG=${DEFAULT_TAG}"                 >> ${GITHUB_ENV}
 
       - name: Build Image
         id: build-image
         run: |
           just build \
+            ${BASE_IMAGE} \
             ${IMAGE_NAME} \
             ${DEFAULT_TAG}
 
