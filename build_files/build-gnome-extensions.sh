@@ -34,7 +34,8 @@ dnf5 install -y \
     gnome-shell-extension-drive-menu \
     gnome-shell-extension-places-menu \
     gnome-shell-extension-user-theme \
-    gnome-shell-extension-window-list
+    gnome-shell-extension-window-list \
+    sushi
 
 ## Build Extensions
 
