@@ -28,5 +28,6 @@ favorite-apps=[ \
 'steam.desktop', \
 'code.desktop', \
 'com.axosoft.GitKraken.desktop', \
+'io.podman_desktop.PodmanDesktop.desktop', \
 'org.gnome.Ptyxis.desktop' \
 ]
