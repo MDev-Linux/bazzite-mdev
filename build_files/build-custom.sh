@@ -20,6 +20,7 @@ dnf5 install -y \
     mutter-devkit \
     pcp \
     python3-pcp \
+    screen \
     setools \
     udica \
     valkey \
