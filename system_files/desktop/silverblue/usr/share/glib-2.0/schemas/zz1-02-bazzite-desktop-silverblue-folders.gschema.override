@@ -3,7 +3,7 @@ folder-children=['Bazaar', 'Code', 'CAD', 'Containers', 'WebApps', 'Media', 'Off
 
 # TODO Missing?
 [org.gnome.desktop.app-folders.folders.Bazaar]
-apps=['io.github.kolunmi.Bazaar.desktop', 'bbrew.desktop', 'ca.desrt.dconf-editor.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'com.github.tchx84.Flatseal.desktop', 'it.mijorus.gearlever.desktop', 'io.github.flattool.Ignition.desktop', 'io.github.flattool.Warehouse.desktop', 'webapp-manager.desktop', 'system-update.desktop', 'io.github.ublue_os.yafti_gtk.desktop']
+apps=['io.github.kolunmi.Bazaar.desktop', 'bbrew.desktop', 'ca.desrt.dconf-editor.desktop', 'com.mattjakeman.ExtensionManager.desktop', 'com.github.tchx84.Flatseal.desktop', 'it.mijorus.gearlever.desktop', 'io.github.flattool.Ignition.desktop', 'io.github.flattool.Warehouse.desktop', 'webapp-manager.desktop', 'system-update.desktop', 'io.github.ublue_os.yafti_gtk.desktop', 'io.github.rfrench3.bazzite-updater.desktop']
 name='Bazaar'
 translate=false
 
@@ -13,12 +13,12 @@ name='CAD'
 translate=false
 
 [org.gnome.desktop.app-folders.folders.Code]
-apps=['org.cockpit_project.CockpitClient.desktop', 'org.ghidra_sre.Ghidra.desktop', 'com.gitbutler.gitbutler.desktop', 'com.unity.UnityHub.desktop', 'org.filezillaproject.Filezilla.desktop', 'one.flipperzero.qFlipper.desktop', 'com.emqx.MQTTX.desktop', 'jetbrains-toolbox.desktop', 'jetbrains-clion-ddae84f9-68a8-4b2b-872c-2f0bf8a47ec2.desktop', 'jetbrains-datagrip-bf4868ef-2466-4a9a-abd9-a956ded425c1.desktop', 'jetbrains-goland-30b2e7a2-c50c-4541-9f55-93b9cdd7656a.desktop', 'jetbrains-idea-c16255cb-4ffa-4162-8b39-9ec578bde576.desktop', 'jetbrains-pycharm-b7818e9a-a825-411b-8c79-cf0942bd1db2.desktop', 'jetbrains-rider-0c62aa36-6b7f-44cf-a49c-750431e0cd48.desktop', 'jetbrains-rustrover-cf07786b-cce7-4261-a98e-e4b2a101bc57.desktop', 'jetbrains-webstorm-ab4a4d7c-e933-4dbe-a0ef-3fbbfdbcdb4f.desktop', 'io.qt.Designer.desktop', 'dk.gqrx.gqrx.desktop', 'org.sdrangel.SDRangel.desktop', 'com.st.STM32CubeMX.desktop', 'com.github.LongSoft.UEFITool.desktop', 'org.wireshark.Wireshark.desktop']
+apps=['com.microsoft.AzureStorageExplorer.desktop', 'chatgpt.desktop', 'org.cockpit_project.CockpitClient.desktop', 'org.ghidra_sre.Ghidra.desktop', 'com.gitbutler.gitbutler.desktop', 'com.unity.UnityHub.desktop', 'org.filezillaproject.Filezilla.desktop', 'one.flipperzero.qFlipper.desktop', 'com.emqx.MQTTX.desktop', 'jetbrains-toolbox.desktop', 'jetbrains-air-aa663c83-0da7-4da6-bdc7-1f93f0a83a7e.desktop', 'jetbrains-studio-fa34acc7-296f-4b46-8ef2-57a8794aca72.desktop', 'jetbrains-clion-ddae84f9-68a8-4b2b-872c-2f0bf8a47ec2.desktop', 'jetbrains-datagrip-bf4868ef-2466-4a9a-abd9-a956ded425c1.desktop', 'jetbrains-idea-c16255cb-4ffa-4162-8b39-9ec578bde576.desktop', 'jetbrains-goland-30b2e7a2-c50c-4541-9f55-93b9cdd7656a.desktop', 'jetbrains-pycharm-b7818e9a-a825-411b-8c79-cf0942bd1db2.desktop', 'jetbrains-rider-0c62aa36-6b7f-44cf-a49c-750431e0cd48.desktop', 'jetbrains-rubymine-47ece4be-ebe0-4a2a-9bb3-edf0b9f36934.desktop', 'jetbrains-rustrover-cf07786b-cce7-4261-a98e-e4b2a101bc57.desktop', 'jetbrains-webstorm-ab4a4d7c-e933-4dbe-a0ef-3fbbfdbcdb4f.desktop', 'com.st.STM32CubeMX.desktop', 'dk.gqrx.gqrx.desktop', 'org.sdrangel.SDRangel.desktop', 'org.wireshark.Wireshark.desktop', 'com.github.LongSoft.UEFITool.desktop', 'qt6-designer.desktop', 'io.qt.Designer.desktop', 'qt6-linguist.desktop', 'org.geogebra.GeoGebra.desktop', 'org.octave.Octave.desktop']
 name='Code'
 translate=false
 
 [org.gnome.desktop.app-folders.folders.Containers]
-apps=['io.github.dvlv.boxbuddyrs.desktop', 'org.gnome.Boxes.desktop', 'com.ranfdev.DistroShelf.desktop', 'io.podman_desktop.PodmanDesktop.desktop', 'org.virt_manager.virt-manager.desktop']
+apps=['com.ranfdev.DistroShelf.desktop', 'io.podman_desktop.PodmanDesktop.desktop', 'virt-manager.desktop']
 name='Containers'
 translate=false
 
@@ -38,7 +38,7 @@ name='Gaming Utilities'
 translate=false
 
 [org.gnome.desktop.app-folders.folders.Media]
-apps=['org.audacityteam.Audacity.desktop', 'org.gimp.GIMP.desktop', 'fr.handbrake.ghb.desktop', 'org.inkscape.Inkscape.desktop', 'org.gnome.TextEditor.desktop', 'org.videolan.VLC.desktop', 'net.sourceforge.projectM.desktop', 'io.mpv.Mpv.desktop']
+apps=['org.audacityteam.Audacity.desktop', 'org.gimp.GIMP.desktop', 'fr.handbrake.ghb.desktop', 'org.inkscape.Inkscape.desktop', 'org.gnome.TextEditor.desktop', 'org.videolan.VLC.desktop', 'net.sourceforge.projectM.desktop', 'io.mpv.Mpv.desktop', 'com.makemkv.MakeMKV.desktop']
 name='Media'
 translate=false
 
@@ -48,12 +48,12 @@ name='Minecraft'
 translate=false
 
 [org.gnome.desktop.app-folders.folders.Office]
-apps=['org.libreoffice.LibreOffice.desktop', 'org.libreoffice.LibreOffice.base.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.libreoffice.LibreOffice.draw.desktop', 'org.libreoffice.LibreOffice.impress.desktop', 'org.libreoffice.LibreOffice.math.desktop', 'org.libreoffice.LibreOffice.writer.desktop', 'org.mozilla.Thunderbird.desktop', 'dev.mufeed.Wordbook.desktop']
+apps=['org.libreoffice.LibreOffice.desktop', 'org.libreoffice.LibreOffice.base.desktop', 'org.libreoffice.LibreOffice.calc.desktop', 'org.libreoffice.LibreOffice.draw.desktop', 'org.libreoffice.LibreOffice.impress.desktop', 'org.libreoffice.LibreOffice.math.desktop', 'org.libreoffice.LibreOffice.writer.desktop', 'md.obsidian.Obsidian.desktop', 'org.gnome.font-viewer.desktop', 'dev.mufeed.Wordbook.desktop', 'org.mozilla.thunderbird_esr.desktop', 'opencascade-draw.desktop', 'org.fontforge.FontForge.desktop']
 name='Office'
 translate=false
 
 [org.gnome.desktop.app-folders.folders.Utilities]
-apps=['btrfs-assistant.desktop', 'io.github.dimtpap.coppwr.desktop', 'com.github.wwmm.easyeffects.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'io.github.shundhammer.qdirstat.desktop', 'discourse.desktop', 'bazzite-documentation.desktop', 'firewall-config.desktop', 'kopia-ui.desktop', 'org.gnome.Logs.desktop', 'io.missioncenter.MissionCenter.desktop', 'nvidia-settings.desktop', 'org.openrgb.OpenRGB.desktop', 'org.freedesktop.MalcontentControl.desktop', 'xyz.z3ntu.razergenie.desktop', 'org.gnome.Sysprof.desktop', 'org.gnome.Settings.desktop', 'org.kde.kleopatra.desktop', 'com.yubico.yubioath.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.raspberrypi.rpi-imager.desktop', 'org.gnome.Yelp.desktop']
+apps=['btrfs-assistant.desktop', 'io.github.dimtpap.coppwr.desktop', 'com.github.wwmm.easyeffects.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.baobab.desktop', 'io.github.shundhammer.qdirstat.desktop', 'discourse.desktop', 'bazzite-documentation.desktop', 'firewall-config.desktop', 'kopia-ui.desktop', 'org.gnome.Logs.desktop', 'io.missioncenter.MissionCenter.desktop', 'nvidia-settings.desktop', 'org.openrgb.OpenRGB.desktop', 'org.freedesktop.MalcontentControl.desktop', 'xyz.z3ntu.razergenie.desktop', 'org.gnome.Sysprof.desktop', 'org.gnome.Settings.desktop', 'org.kde.kleopatra.desktop', 'com.yubico.yubioath.desktop', 'org.fedoraproject.MediaWriter.desktop', 'org.raspberrypi.rpi-imager.desktop', 'org.gnome.Yelp.desktop', 'org.coolercontrol.CoolerControl.desktop', 'cardwire-gui.desktop', 'xpra-gui.desktop']
 name='X-GNOME-Utilities.directory'
 translate=true
 
